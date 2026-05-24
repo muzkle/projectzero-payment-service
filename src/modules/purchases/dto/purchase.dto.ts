@@ -1,5 +1,5 @@
 import { IsUUID } from 'class-validator';
-import { PurchaseStatus } from '@projectzero/contracts';
+import { PurchaseStatus } from '@muzkle/contracts';
 
 export class CreatePurchaseDto {
   @IsUUID()

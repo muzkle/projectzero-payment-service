@@ -1,7 +1,7 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import axios, { AxiosInstance, isAxiosError } from 'axios';
-import { PartnerDto, ApiResponse, ErrorCode } from '@projectzero/contracts';
+import { PartnerDto, ApiResponse, ErrorCode } from '@muzkle/contracts';
 
 @Injectable()
 export class IdentityClient {

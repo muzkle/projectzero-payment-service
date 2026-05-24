@@ -5,7 +5,7 @@ import {
   CreateDateColumn,
   Index,
 } from 'typeorm';
-import { PurchaseStatus } from '@projectzero/contracts';
+import { PurchaseStatus } from '@muzkle/contracts';
 
 @Entity('purchases')
 export class Purchase {

@@ -1,7 +1,7 @@
 import { Global, Module } from '@nestjs/common';
 import { BullModule } from '@nestjs/bullmq';
 import { ConfigService } from '@nestjs/config';
-import { QUEUE_NAMES } from '@projectzero/contracts';
+import { QUEUE_NAMES } from '@muzkle/contracts';
 import { QueueService } from './queue.service';
 
 @Global()

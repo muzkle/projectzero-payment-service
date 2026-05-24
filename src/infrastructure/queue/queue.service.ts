@@ -5,7 +5,7 @@ import {
   QUEUE_NAMES,
   JOB_NAMES,
   PurchaseCompletedEvent,
-} from '@projectzero/contracts';
+} from '@muzkle/contracts';
 
 @Injectable()
 export class QueueService {

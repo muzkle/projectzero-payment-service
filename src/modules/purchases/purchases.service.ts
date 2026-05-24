@@ -11,7 +11,7 @@ import {
   PartnerStatus,
   PurchaseStatus,
   PurchaseCompletedEvent,
-} from '@projectzero/contracts';
+} from '@muzkle/contracts';
 import { v4 as uuidv4 } from 'uuid';
 import { Purchase } from './entities/purchase.entity';
 import { CreatePurchaseDto, CreatePurchaseResponseDto, PurchaseDto } from './dto/purchase.dto';

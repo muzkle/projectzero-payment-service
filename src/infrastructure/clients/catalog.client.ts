@@ -1,7 +1,7 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import axios, { AxiosInstance, isAxiosError } from 'axios';
-import { StickerDto, ApiResponse, ErrorCode } from '@projectzero/contracts';
+import { StickerDto, ApiResponse, ErrorCode } from '@muzkle/contracts';
 
 @Injectable()
 export class CatalogClient {
