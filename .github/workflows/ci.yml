@@ -1,0 +1,26 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: ${{ github.repository_owner }}/projectzero-contracts
+          path: projectzero-contracts
+        continue-on-error: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: |
+          if [ -d ../projectzero-contracts ]; then cd ../projectzero-contracts && npm ci && npm run build; fi
+          npm ci
+          npm run build
+        working-directory: .
